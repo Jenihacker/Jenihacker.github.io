@@ -743,7 +743,7 @@ svg {
 .project {
   min-height: 100vh;
   height: auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)),url('https://www.teahub.io/photos/full/96-960344_material-design-hd-desktop-wallpaper-triangle.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)),url('/assets/Project.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
