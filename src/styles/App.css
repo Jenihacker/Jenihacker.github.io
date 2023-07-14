@@ -1,0 +1,759 @@
+#root {
+  width: 100%;
+  margin: 0;
+}
+
+#root::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.navbar nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(6, 27, 31);
+  box-shadow: 0 0 20px #000000;
+  z-index:10;
+}
+
+.navbar nav .logo img {
+  padding: 5px;
+  width: 125px;
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar nav .logo a {
+  display: flex;
+  align-items: center;
+  padding: 0.5vh 1vw;
+}
+
+#menu {
+  display: none;
+}
+
+.navbar nav ul {
+  display: flex;
+  margin-right: 5%;
+}
+
+.navbar nav ul li {
+  list-style: none;
+  margin-left: 2.5rem;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: var(--dark);
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.navbar nav ul li a::after {
+  content: '';
+    width: 0;
+    height: 3px;
+    background: #e91e63;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.navbar nav ul li a:hover {
+  color: rgb(81, 255, 0);
+}
+
+.navbar nav ul li a:hover::after {
+  width: 100%;
+}
+
+#mode:hover::after {
+  width: 0%;
+}
+
+.home {
+  min-height:100vh;
+  height: auto;
+  padding-top: 25vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.4)),url('/assets/bg-image.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.hero .details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .details .details1 h1 {
+  font-weight: 500;
+  font-size: 3.2vw;
+  color: var(--dark);
+}
+
+.hero .details .details1 h1 span {
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero .details .details1 h2 {
+  font-weight: 500;
+  font-size: 2.2vw;
+  margin: 0;
+  color: var(--dark);
+}
+
+.hero .details .details1 h2 span {
+  background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero .image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.hero .image img {
+  background-color: red/*rgb(0, 255, 26)*/;
+  border-radius: 200px;
+  width: 350px;
+  outline: 10px dotted var(--dark);
+  transition: all 1s;
+  cursor: pointer;
+  animation: anime 15s ease-in-out infinite;
+}
+
+@keyframes anime {
+  0% {
+    background-color: red;
+  }
+  10% {
+    background-color: rgb(255, 94, 0);
+  }
+  20% {
+    background-color: rgb(255, 200, 0);
+  }
+  30% {
+    background-color: greenyellow;
+  }
+  40% {
+    background-color: rgb(0, 183, 255);
+  }
+  50% {
+    background-color: blue;
+  }
+  60% {
+    background-color: rgb(136, 0, 255);
+  }
+  70% {
+    background-color: aquamarine;
+  }
+  80% {
+    background-color: deeppink;
+  }
+  90% {
+    background-color: rgb(170, 255, 0);
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.hero .image img:hover {
+  transform: rotate(360deg);
+}
+
+.abtbtn button {
+  margin-top: 5%;
+  padding:3% 6%;
+  border-radius: 0.8rem;
+  background-color: #F2672E;
+  border: 1px solid orangered;
+  font-family: 'Audiowide',cursive;
+  transition: all 0.5s;
+  color: var(--dark);
+  font-size: 1.3rem;
+}
+
+.abtbtn button:hover {
+  box-shadow: 0 0 25px orangered;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.icons i {
+  margin:7% 5% 5% 1%;
+  color: var(--dark);
+  font-size: 1.9rem;
+}
+
+.icons i:hover {
+  color: orangered;
+  transform: scale(1.4);
+}
+
+
+@media (min-width:481px) and (max-width: 768px) {
+  #menu {
+    display: block;
+    margin: 2%;
+    background-color: transparent;
+    color: var(--dark);
+    border: 1px solid var(--dark);
+    font-size: 1.5rem;
+  }
+
+  .home {
+    padding-top: 8vh;
+    height:120vh;
+  }
+  
+  .hero {
+    flex-direction:column;
+    text-align: center;
+  }
+  
+  .navbar nav {
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.7s;
+  }
+
+  .navbar nav::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+  
+  .navbar nav ul {
+    display: none;
+    text-align: center;
+    padding-left: 0;
+    margin-right: 0;
+    position: absolute;
+    top: 30%;
+}
+
+.navbar nav ul li {
+  margin-left: 0;
+  padding:5% 0;
+}
+
+.hero .details .details1 h1 {
+  font-size: 2.5rem;
+  text-align: left;
+}
+.hero .details .details1 h2 {
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.abtbtn {
+  text-align: center;
+}
+
+.icons {
+  text-align: center;
+}
+
+.hero .image {
+  padding-top: 5vh;
+}
+
+.hero .image img {
+  width: 250px;
+}
+
+svg {
+  position: relative;
+  right: 5%;
+}
+}
+
+@media (max-width:480px) {
+  #menu {
+    display: block;
+    margin: 2%;
+    background-color: transparent;
+    color: var(--dark);
+    border: 1px solid var(--dark);
+    font-size: 1.5rem;
+  }
+
+  .home {
+    padding-top: 10vh;
+    min-height:100vh;
+    padding-bottom: 10vh;
+  }
+  
+  .hero {
+    flex-direction:column;
+    text-align: center;
+  }
+
+  .navbar nav {
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: height 0.7s;
+  }
+  
+  .navbar nav::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+
+  .navbar nav .logo a img {
+    width:100px;
+    height: 34px;
+    margin-bottom: 2px;
+    padding: 0;
+  }
+  
+  .navbar nav ul {
+    display: none;
+    text-align: center;
+    padding-left: 0;
+    margin-right: 0;
+  position: absolute;
+  top: 30%;
+}
+
+.navbar nav ul li {
+  margin-left: 0;
+  padding:5% 0;
+}
+
+.hero .details {
+  margin-bottom: 5vh;
+}
+
+.hero .details .details1 h1 {
+  font-size: 2rem;
+  text-align: left;
+}
+.hero .details .details1 h2 {
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.abtbtn {
+  text-align: center;
+}
+
+.icons {
+  text-align: center;
+}
+
+.hero .image img {
+  width: 250px;
+}
+
+.bg-contact3 {
+  align-items: auto;
+}
+
+}
+
+
+
+@media (min-width:769px) and (max-width: 980px) {
+  .hero .image img {
+    width: 250px;
+  }
+}
+
+@media (min-width:981px) and (max-width: 1024px) {
+  .hero .image img {
+    width: 250px;
+  }
+  
+  .hero .details .details1 h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width:1025px) and (max-width: 1200px) {
+  .hero .image img {
+    width: 300px;
+  }
+}
+
+@media (min-width:380px) and (max-width: 440px) {
+ .home {
+  height: 110vh;
+ }
+ .hero .details .details1 h1 {
+  font-size: 2rem;
+ }
+ .hero .details .details1 h2 {
+  font-size: 1.5rem;
+}
+}
+
+@media (max-width: 379px) {
+  .hero .details .details1 h1 {
+    font-size: 1.8rem;
+   }
+   .hero .details .details1 h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width:441px) and (max-width:480px) {
+  .hero .details .details1 h1 {
+    font-size: 2rem;
+  }
+  .hero .details .details1 h2 {
+    font-size: 1.5rem;
+  }
+}
+
+svg {
+  transform: scale(0.8);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 15vh;
+  background-image: url('/assets/itl.cat_material-design-desktop-wallpaper_737396.png');
+}
+
+.aboutdet {
+  display: flex;
+}
+
+.abtimg {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abtimg img {
+  border: 5px dashed;
+  border-color: red yellow blue greenyellow;
+  border-radius: 150px;
+}
+
+.abtsec {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.abtsec p{
+  margin: 0;
+  line-height: 2.5;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-right: 1vw;
+  color: var(--dark);
+}
+
+.about h1 {
+  width: fit-content;
+  font-family: 'DynaPuff', cursive;
+  font-size: 5rem;
+  color: var(--dark);
+  background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.about h1:hover {
+  background: #00F260;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: default;
+}
+
+@media (min-width:481px) and (max-width:768px) {
+  .about {
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+  }
+  
+  .aboutdet {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutdet p {
+    font-size: 1.1rem;
+    line-height: 2;
+  }
+
+  .abtimg {
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+
+  .abtsec {
+    width: 90%;
+  }
+}
+
+@media (min-width:441px) and (max-width:480px) {
+  .about {
+    flex-direction: column;
+    text-align: justify;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+  }
+
+  .aboutdet {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutdet p {
+    font-size: 1.1rem;
+    line-height: 2;
+  }
+
+  .abtimg {
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+
+  .abtsec {
+    width: 90%;
+  }
+
+  .bg-contact3 {
+    margin-top: 15%;
+  }
+}
+
+@media (min-width:360px) and (max-width:440px) {
+  .about {
+    flex-direction: column;
+    text-align: justify;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+  }
+
+  .about h1 {
+    font-size: 4.5rem;
+  }
+
+  .aboutdet {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutdet p {
+    font-size: 1.1rem;
+    line-height: 2;
+  }
+
+  .abtimg {
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+
+  .abtsec {
+    width: 90%;
+  }
+
+  .bg-contact3 {
+    margin-top: 15%;
+  }
+}
+
+@media (max-width:359px) {
+  .about {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    height: auto;
+  }
+  .about h1 {
+    font-size: 3.5rem;
+  }
+  .abtimg img{
+    max-width: none;
+  }
+  .abtimg {
+    margin-bottom: 5vh;
+  }
+  .aboutdet {
+    flex-direction: column;
+    align-items: center;
+  }
+  .abtsec {
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+.Skills {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:10vh 0;
+  background: linear-gradient(to bottom, hsl(272, 94%, 32%),	hsl(260, 100%, 44%));
+}
+
+.Skills h1 {
+  font-size: 4rem;
+  font-family: 'Audiowide',cursive;
+  display: flex;
+  justify-content: center;
+}
+
+.Skills .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Skills .container .content {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 3vh;
+  border-radius: 1rem;
+  margin: 0 8vw;
+}
+
+.Skills .container .content .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.8rem;
+  
+}
+
+.card {
+  background: rgba(36, 36, 36, 0.9);
+  transition: 0.2s;
+  width: 180px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8);
+  
+  transform: scale(1.2);
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+}
+
+.card-info img {
+  margin-bottom: 10px;
+}
+
+.card-info span {
+  font-size: 1.5rem;
+}
+
+
+@media (min-width:441px) and (max-width:480px) {
+  .Skills h1 {
+    font-size: 2.5rem;
+  }
+  .Skills .container .content {
+      margin: 0 1vw;
+    }
+}
+
+@media (max-width:440px) {
+  .Skills h1 {
+    font-size: 2.1rem;
+  }
+  .Skills .container .content {
+      margin: 0 1vw;
+    }
+
+  .card {
+    width: 140px;
+  }
+
+  .card-info span {
+    font-size: 1.3rem;
+  }
+}
+
+
+.project {
+  min-height: 100vh;
+  height: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)),url('https://www.teahub.io/photos/full/96-960344_material-design-hd-desktop-wallpaper-triangle.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project h1 {
+  font-size: 4rem;
+  font-family: 'Montserrat',cursive;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 5vh;
+}

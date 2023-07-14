@@ -1,0 +1,331 @@
+input {
+    outline: none;
+    border: none;
+}
+
+textarea {
+    outline: none;
+    border: none;
+}
+
+textarea:focus,input:focus {
+    border-color: transparent!important
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(255,255,255,.8);
+}
+
+input:-moz-placeholder {
+    color: rgba(255,255,255,.8);
+}
+
+input::-moz-placeholder {
+    color: rgba(255,255,255,.8);
+}
+
+input:-ms-input-placeholder {
+    color: rgba(255,255,255,.8);
+}
+
+textarea::-webkit-input-placeholder {
+    color: rgba(255,255,255,.8);
+}
+
+textarea:-moz-placeholder {
+    color: rgba(255,255,255,.8);
+}
+
+textarea::-moz-placeholder {
+    color: rgba(255,255,255,.8);
+}
+
+textarea:-ms-input-placeholder {
+    color: rgba(255,255,255,.8);
+}
+
+.contact3-form-btn button {
+    outline: none!important;
+    border: none;
+    background: 0 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.bg-contact3 {
+    min-height: 100vh;
+    padding: 10vh 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(rgb(0,0,0,0.2),rgb(0,0,0,0.2)),url('/assets/materialui.png');
+    background-size: cover;
+}
+
+.container-contact3 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-contact3 {
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(45deg, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4% 5% 5%;
+    border-radius: 18px;
+    border: 2px dashed var(--light);
+}
+
+
+.contact3-form-title {
+    display: block;
+    font-family: 'Viga',sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.8;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.wrap-input3 {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.24);
+}
+
+.input3 {
+    display: block;
+    width: 100%;
+    background: 0 0;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.2;
+    padding: 0 5px;
+}
+
+.focus-input3 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.focus-input3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    background: #fff;
+}
+
+input.input3 {
+    height: 45px;
+}
+
+textarea.input3 {
+    min-height: 115px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.input3:focus+.focus-input3::before {
+    width: 100%;
+}
+
+.has-val.input3+.focus-input3::before {
+    width: 100%;
+}
+
+.container-contact3-form-btn {
+    padding-top: 23px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact3-form-btn {
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    min-width: 120px;
+    width: 20vw;
+    height: 50px;
+    border-radius: 18px;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s
+}
+
+.contact3-form-btn:hover {
+    background-color: #0d1f20;
+    color: #fff;
+    border:1px solid #fff;
+}
+
+@media(max-width: 576px) {
+    .wrap-contact3 {
+        padding:42px 15px 45px;
+        
+    }
+}
+
+@media (max-width:480px) {
+    .wrap-contact3 {
+        margin-top: 1vh;
+    }
+}
+
+@media (max-width:320px) {
+    .wrap-contact3 {
+    margin-top: 0vh;
+    }
+}
+
+.validate-input {
+    position: relative
+}
+
+.alert-validate::before {
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: #fff;
+    border: 1px solid #c80000;
+    border-radius: 2px;
+    padding: 4px 25px 4px 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    pointer-events: none;
+    font-family: Poppins-Regular;
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .4s;
+    -o-transition: opacity .4s;
+    -moz-transition: opacity .4s;
+    transition: opacity .4s
+}
+
+.alert-validate::after {
+    content: "\f12a";
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+    color: #c80000;
+    font-size: 16px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 8px
+}
+
+.alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1
+}
+
+@media(max-width: 992px) {
+    .alert-validate::before {
+        visibility:visible;
+        opacity: 1
+    }
+}
+
+.success {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px 30px 70px;
+    
+}
+.success button.close {
+    width: 30px;
+    font-size: 20px;
+    color: #c0c5cb;
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+}
+.success lottie-player {
+    width: 82px;
+}
+.success p {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+.success button.accept {
+    background-color: #ed6755;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    padding: 14px;
+    font-size: 16px;
+    color: white;
+    box-shadow: 0px 6px 18px -5px #ed6755;
+}
+
+.success button.accept:hover {
+    background-color: #ed6755;
+    box-shadow: 0px 6px 18px -5px #ed6755;
+}
+
+
+

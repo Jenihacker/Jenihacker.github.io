@@ -1,0 +1,105 @@
+.footer-elems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: hsl(190, 67.6%, 7.3%);
+    padding:8vh 0;
+}
+
+.footer-elems .first-sec {
+    display: block;
+}
+
+.footer-elems p,.footer-elems li {
+    font-size: 1.2rem;
+    font-family: 'Nunito',sans-serif;
+    list-style: none;
+}
+
+.footer-elems li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-elems li a:hover{
+    color: rgb(81, 255, 0);
+}
+
+
+
+.footer-elems .third-sec .social-links i{
+    margin-top: 1.5vh;
+    margin-right: 2vw;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer-elems .third-sec .social-links a i:hover{
+    color: orangered;
+    transform: scale(1.2);
+}
+
+.footer-elems h1 {
+    color: #fff;
+    position: relative;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgb(81, 255, 0);
+    margin-bottom: 10px;
+  }
+
+  .footer-elems h1::after {
+    content: '';
+      width: 100%;
+      height: 3px;
+      background: #e91e63;
+      position: absolute;
+      left:0;
+      bottom: 0;
+  }
+  
+.footer-elems .first-sec h2 {
+    font-size: 1.2rem;
+    font-family: 'Nunito',sans-serif;
+}
+  
+@media (max-width:480px) {
+    .footer-elems {
+        flex-direction: column;
+    }
+    .first-sec,.second-sec,.third-sec{
+        margin: 1vh 5vh;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .footer-elems {
+        flex-direction: column;
+    }
+    .first-sec,.second-sec,.third-sec{
+        margin: 1vh 5vh;
+    }
+}
+    
+@media (max-width:480px) {
+    .footer-elems {
+        padding: 5vh 0;
+    }
+    
+    .footer-elems h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer-elems p,.footer-elems li {
+        font-size: 1rem;
+    }
+    
+    .footer-elems .first-sec h2 {
+        font-size: 1rem;
+    }
+
+    .footer-elems .third-sec .social-links a{
+        margin-right: 10px;
+    }
+}

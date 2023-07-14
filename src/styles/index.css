@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bangers&family=DynaPuff:wght@500&family=Montserrat:wght@500&family=Nunito&family=Poppins:wght@400;500;700&family=Viga&display=swap');
+
+:root {
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.8;
+  font-weight: 400;
+  --dark : #ffffff;
+  --light : #ffffff;
+  --dark-image : url('/assets/bg-image.webp');
+  --light-image : url('/assets/1.png');
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  /*background-image: linear-gradient(146.2deg,#613270 0%,#131213 30.21%,#121111 61.45%,#1E2A52 100%);*/
+  /*background-color: #0A3042;*/
+  background-attachment: fixed;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #393939fb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #40E0D0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(180deg, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 1rem;
+  border:0.1rem solid #000;
+  background-clip: content-box;
+}
