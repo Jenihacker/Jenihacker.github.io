@@ -46,8 +46,8 @@ export const skills = [
     },
     {
         id: 10,
-        image: "https://img.icons8.com/color/256/golang.png",
-        text: "Go"
+        image: "https://raw.githubusercontent.com/Gedipey/image/main/django.png",
+        text: "Django"
     },
     {
         id: 11,
