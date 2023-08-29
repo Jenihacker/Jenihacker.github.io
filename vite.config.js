@@ -15,5 +15,6 @@ export default defineConfig(({ command, mode }) => {
           'process.env.USER_ID': JSON.stringify(env.USER_ID),
       },
       plugins: [react()],
+      base: '/',
   };
 });
