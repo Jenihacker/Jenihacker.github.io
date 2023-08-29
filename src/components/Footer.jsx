@@ -35,7 +35,7 @@ function Footer() {
               <div className="social-links">
                 <a href='https://github.com/Jenihacker/' target='__blank'><i class="fa-brands fa-github"></i></a>
                 <a href='https://www.linkedin.com/in/jenison-monteiro-7715b0205/' target='__blank'><i class="fa-brands fa-linkedin"></i></a>
-                <a href='https://twitter.com/jenisonmonteiro/' target='__blank'><i class="fa-brands fa-twitter"></i></a>
+                <a href='https://twitter.com/jenisonmonteiro/' target='__blank'><i class="fa-brands fa-x-twitter"></i></a>
                 <a href='https://www.facebook.com/jenison.monteiro.3/' target='__blank'><i class="fa-brands fa-facebook"></i></a>
                 <a href='https://www.instagram.com/jenison__05/' target='__blank'><i class="fa-brands fa-instagram"></i></a>
               </div>
