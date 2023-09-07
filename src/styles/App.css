@@ -22,7 +22,7 @@
   align-items: center;
   background-color: rgb(6, 27, 31);
   box-shadow: 0 0 20px #000000;
-  z-index:10;
+  z-index: 10;
 }
 
 .navbar nav .logo img {
@@ -66,13 +66,13 @@
 
 .navbar nav ul li a::after {
   content: '';
-    width: 0;
-    height: 3px;
-    background: #e91e63;
-    position: absolute;
-    left:0;
-    bottom: -6px;
-    transition: 0.5s;
+  width: 0;
+  height: 3px;
+  background: #e91e63;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
 }
 
 .navbar nav ul li a:hover {
@@ -88,10 +88,10 @@
 }
 
 .home {
-  min-height:100vh;
+  min-height: 100vh;
   height: auto;
   padding-top: 25vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.4)),url('/assets/bg-image.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('/assets/bg-image.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -141,7 +141,9 @@
 }
 
 .hero .image img {
-  background-color: red/*rgb(0, 255, 26)*/;
+  background-color: red
+    /*rgb(0, 255, 26)*/
+  ;
   border-radius: 200px;
   width: 350px;
   outline: 10px dotted var(--dark);
@@ -154,33 +156,43 @@
   0% {
     background-color: red;
   }
+
   10% {
     background-color: rgb(255, 94, 0);
   }
+
   20% {
     background-color: rgb(255, 200, 0);
   }
+
   30% {
     background-color: greenyellow;
   }
+
   40% {
     background-color: rgb(0, 183, 255);
   }
+
   50% {
     background-color: blue;
   }
+
   60% {
     background-color: rgb(136, 0, 255);
   }
+
   70% {
     background-color: aquamarine;
   }
+
   80% {
     background-color: deeppink;
   }
+
   90% {
     background-color: rgb(170, 255, 0);
   }
+
   100% {
     background-color: red;
   }
@@ -192,11 +204,11 @@
 
 .abtbtn button {
   margin-top: 5%;
-  padding:3% 6%;
+  padding: 3% 6%;
   border-radius: 0.8rem;
   background-color: #F2672E;
   border: 1px solid orangered;
-  font-family: 'Audiowide',cursive;
+  font-family: 'Audiowide', cursive;
   transition: all 0.5s;
   color: var(--dark);
   font-size: 1.3rem;
@@ -209,7 +221,7 @@
 }
 
 .icons i {
-  margin:7% 5% 5% 1%;
+  margin: 7% 5% 5% 1%;
   color: var(--dark);
   font-size: 1.9rem;
 }
@@ -232,14 +244,14 @@
 
   .home {
     padding-top: 8vh;
-    height:120vh;
+    height: 120vh;
   }
-  
+
   .hero {
-    flex-direction:column;
+    flex-direction: column;
     text-align: center;
   }
-  
+
   .navbar nav {
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.3);
@@ -259,7 +271,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     z-index: -1;
   }
-  
+
   .navbar nav ul {
     display: none;
     text-align: center;
@@ -267,42 +279,43 @@
     margin-right: 0;
     position: absolute;
     top: 30%;
-}
+  }
 
-.navbar nav ul li {
-  margin-left: 0;
-  padding:5% 0;
-}
+  .navbar nav ul li {
+    margin-left: 0;
+    padding: 5% 0;
+  }
 
-.hero .details .details1 h1 {
-  font-size: 2.5rem;
-  text-align: left;
-}
-.hero .details .details1 h2 {
-  font-size: 1.8rem;
-  text-align: left;
-}
+  .hero .details .details1 h1 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
 
-.abtbtn {
-  text-align: center;
-}
+  .hero .details .details1 h2 {
+    font-size: 1.8rem;
+    text-align: left;
+  }
 
-.icons {
-  text-align: center;
-}
+  .abtbtn {
+    text-align: center;
+  }
 
-.hero .image {
-  padding-top: 5vh;
-}
+  .icons {
+    text-align: center;
+  }
 
-.hero .image img {
-  width: 250px;
-}
+  .hero .image {
+    padding-top: 5vh;
+  }
 
-svg {
-  position: relative;
-  right: 5%;
-}
+  .hero .image img {
+    width: 250px;
+  }
+
+  svg {
+    position: relative;
+    right: 5%;
+  }
 }
 
 @media (max-width:480px) {
@@ -317,12 +330,12 @@ svg {
 
   .home {
     padding-top: 10vh;
-    min-height:100vh;
+    min-height: 100vh;
     padding-bottom: 10vh;
   }
-  
+
   .hero {
-    flex-direction:column;
+    flex-direction: column;
     text-align: center;
   }
 
@@ -336,7 +349,7 @@ svg {
     z-index: 99;
     transition: height 0.7s;
   }
-  
+
   .navbar nav::after {
     content: "";
     position: absolute;
@@ -347,54 +360,55 @@ svg {
   }
 
   .navbar nav .logo a img {
-    width:100px;
+    width: 100px;
     height: 34px;
     margin-bottom: 2px;
     padding: 0;
   }
-  
+
   .navbar nav ul {
     display: none;
     text-align: center;
     padding-left: 0;
     margin-right: 0;
-  position: absolute;
-  top: 30%;
-}
+    position: absolute;
+    top: 30%;
+  }
 
-.navbar nav ul li {
-  margin-left: 0;
-  padding:5% 0;
-}
+  .navbar nav ul li {
+    margin-left: 0;
+    padding: 5% 0;
+  }
 
-.hero .details {
-  margin-bottom: 5vh;
-}
+  .hero .details {
+    margin-bottom: 5vh;
+  }
 
-.hero .details .details1 h1 {
-  font-size: 2rem;
-  text-align: left;
-}
-.hero .details .details1 h2 {
-  font-size: 1.8rem;
-  text-align: left;
-}
+  .hero .details .details1 h1 {
+    font-size: 2rem;
+    text-align: left;
+  }
 
-.abtbtn {
-  text-align: center;
-}
+  .hero .details .details1 h2 {
+    font-size: 1.8rem;
+    text-align: left;
+  }
 
-.icons {
-  text-align: center;
-}
+  .abtbtn {
+    text-align: center;
+  }
 
-.hero .image img {
-  width: 250px;
-}
+  .icons {
+    text-align: center;
+  }
 
-.bg-contact3 {
-  align-items: auto;
-}
+  .hero .image img {
+    width: 250px;
+  }
+
+  .bg-contact3 {
+    align-items: auto;
+  }
 
 }
 
@@ -410,7 +424,7 @@ svg {
   .hero .image img {
     width: 250px;
   }
-  
+
   .hero .details .details1 h2 {
     font-size: 1.6rem;
   }
@@ -423,22 +437,25 @@ svg {
 }
 
 @media (min-width:380px) and (max-width: 440px) {
- .home {
-  height: 110vh;
- }
- .hero .details .details1 h1 {
-  font-size: 2rem;
- }
- .hero .details .details1 h2 {
-  font-size: 1.5rem;
-}
+  .home {
+    height: 110vh;
+  }
+
+  .hero .details .details1 h1 {
+    font-size: 2rem;
+  }
+
+  .hero .details .details1 h2 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 379px) {
   .hero .details .details1 h1 {
     font-size: 1.8rem;
-   }
-   .hero .details .details1 h2 {
+  }
+
+  .hero .details .details1 h2 {
     font-size: 1.4rem;
   }
 }
@@ -447,6 +464,7 @@ svg {
   .hero .details .details1 h1 {
     font-size: 2rem;
   }
+
   .hero .details .details1 h2 {
     font-size: 1.5rem;
   }
@@ -489,7 +507,7 @@ svg {
   justify-content: center;
 }
 
-.abtsec p{
+.abtsec p {
   margin: 0;
   line-height: 2.5;
   font-size: 1.1rem;
@@ -510,9 +528,12 @@ svg {
 }
 
 .about h1:hover {
-  background: #00F260;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #00F260;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0575E6, #00F260);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: default;
@@ -524,7 +545,7 @@ svg {
     padding-top: 5vh;
     padding-bottom: 15vh;
   }
-  
+
   .aboutdet {
     flex-direction: column;
     align-items: center;
@@ -621,19 +642,24 @@ svg {
     padding-bottom: 10vh;
     height: auto;
   }
+
   .about h1 {
     font-size: 3.5rem;
   }
-  .abtimg img{
+
+  .abtimg img {
     max-width: none;
   }
+
   .abtimg {
     margin-bottom: 5vh;
   }
+
   .aboutdet {
     flex-direction: column;
     align-items: center;
   }
+
   .abtsec {
     width: 100%;
     text-align: justify;
@@ -646,13 +672,13 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:10vh 0;
-  background: linear-gradient(to bottom, hsl(272, 94%, 32%),	hsl(260, 100%, 44%));
+  padding: 10vh 0;
+  background: linear-gradient(to bottom, hsl(272, 94%, 32%), hsl(260, 100%, 44%));
 }
 
 .Skills h1 {
   font-size: 4rem;
-  font-family: 'Audiowide',cursive;
+  font-family: 'Audiowide', cursive;
   display: flex;
   justify-content: center;
 }
@@ -675,7 +701,7 @@ svg {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.8rem;
-  
+
 }
 
 .card {
@@ -693,7 +719,7 @@ svg {
 
 .card:hover {
   box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8);
-  
+
   transform: scale(1.2);
 }
 
@@ -717,18 +743,20 @@ svg {
   .Skills h1 {
     font-size: 2.5rem;
   }
+
   .Skills .container .content {
-      margin: 0 1vw;
-    }
+    margin: 0 1vw;
+  }
 }
 
 @media (max-width:440px) {
   .Skills h1 {
     font-size: 2.1rem;
   }
+
   .Skills .container .content {
-      margin: 0 1vw;
-    }
+    margin: 0 1vw;
+  }
 
   .card {
     width: 140px;
@@ -743,7 +771,7 @@ svg {
 .project {
   min-height: 100vh;
   height: auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)),url('/assets/Project.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('/assets/Project.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -752,7 +780,7 @@ svg {
 
 .project h1 {
   font-size: 4rem;
-  font-family: 'Montserrat',cursive;
+  font-family: 'Montserrat', cursive;
   font-weight: 400;
   text-align: center;
   padding-bottom: 5vh;

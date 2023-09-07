@@ -14,7 +14,7 @@ function Skills() {
           <div className="row">
           { skills.map((elem) => (
             <Fade bottom>
-            <Cards key={elem.id} image = {elem.image} text = {elem.text} />
+            <Cards key={elem.id} image = {elem.image} text = {elem.text} url= {elem.url}/>
             </Fade>
             ))}
           </div>
