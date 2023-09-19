@@ -55,7 +55,7 @@ export const skills = [
     },
     {
         id: 10,
-        image: "https://raw.githubusercontent.com/Gedipey/image/main/django.png",
+        image: "https://raw.githubusercontent.com/jenisnmm/images/main/django.webp",
         text: "Django",
         url: "https://docs.djangoproject.com/en/4.2/"
     },

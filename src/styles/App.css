@@ -496,6 +496,7 @@ svg {
 
 .abtimg img {
   border: 5px dashed;
+  width: 300px;
   border-color: red yellow blue greenyellow;
   border-radius: 150px;
 }

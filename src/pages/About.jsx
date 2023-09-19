@@ -11,7 +11,7 @@ function About() {
       <div className="aboutdet">
         <Fade left>  
         <div className="abtimg">
-            <img src={ image } alt="image" width={300} height={300} draggable="false" />
+            <img src={ image } alt="image" draggable="false" />
         </div>
         </Fade>
         <Fade left>
