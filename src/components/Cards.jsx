@@ -4,7 +4,7 @@ import "/src/styles/App.css";
 function Cards({ image, text, url }) {
   return (
     <>
-      <a href={url} target="_blank">
+      <a href={url} target="_blank" rel="noopener noreferrer">
         <div className="card">
           <div className="card-info">
             <img
