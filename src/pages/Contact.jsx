@@ -5,6 +5,7 @@ import Failed from '/src/components/Failed'
 import Zoom from 'react-reveal/Zoom';
 import { useForm } from "react-hook-form"
 import emailjs from '@emailjs/browser';
+import { Element } from 'react-scroll';
 
 
 function Contact() {
@@ -48,7 +49,7 @@ function Contact() {
       });
   }
   return (
-    <div id='contact'>
+    <Element id='contact'>
       <div className="bg-contact3">
         {showModal && <Modal closeModal={closeModal} /> }
         {showFModal && <Failed closeFModal={closeFModal} /> }
@@ -132,7 +133,7 @@ function Contact() {
           </div>
         </Zoom>
       </div>
-    </div>
+    </Element>
   )
 }
 

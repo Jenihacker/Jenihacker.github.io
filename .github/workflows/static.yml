@@ -36,9 +36,9 @@ jobs:
           node-version: 18.15.0
           cache: 'npm'
       - name: Install dependencies
-        run: npm install -f
+        run: yarn install
       - name: Build
-        run: npm run build
+        run: yarn build
         env:
           SERVICE_ID : ${{ secrets.SERVICE_ID }}
           TEMPLATE_ID : ${{ secrets.TEMPLATE_ID }}

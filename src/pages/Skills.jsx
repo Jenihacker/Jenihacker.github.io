@@ -2,10 +2,11 @@ import React from 'react'
 import Cards from '/src/components/Cards'
 import { skills } from '/src/data/skills'
 import Fade from 'react-reveal/Fade';
+import { Element } from 'react-scroll';
 
 function Skills() {
   return (
-    <div className='Skills' id='skills'>
+    <Element className='Skills' id='skills'>
       <Fade top> 
       <h1>Skills & Experience</h1>
       </Fade>
@@ -20,7 +21,7 @@ function Skills() {
           </div>
         </div>
       </div>
-    </div>
+    </Element>
   )
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import '/src/styles/footer.css'
-import { HashLink as Link } from 'react-router-hash-link'
 import Bounce from 'react-reveal/Bounce';
+import { Link } from 'react-scroll';
 
 function Footer() {
   return (
@@ -19,11 +19,11 @@ function Footer() {
             <div className="second-sec">
               <h1>Quick Links</h1>
               <ul>
-                <li><i class="fa-solid fa-greater-than"></i>{' '}<Link smooth to='#'>Home</Link></li>
-                <li><i class="fa-solid fa-greater-than"></i>{' '}<Link smooth to='#about'>About</Link></li>
-                <li><i class="fa-solid fa-greater-than"></i>{' '}<Link smooth to='#skills'>Skills</Link></li>
-                <li><i class="fa-solid fa-greater-than"></i>{' '}<Link smooth to='#project'>Project</Link></li>
-                <li><i class="fa-solid fa-greater-than"></i>{' '}<Link smooth to='#contact'>Contact</Link></li>
+                <li><i class="fa-solid fa-greater-than"></i>{' '}<Link smooth to='home'>Home</Link></li>
+                <li><i class="fa-solid fa-greater-than"></i>{' '}<Link smooth to='about'>About</Link></li>
+                <li><i class="fa-solid fa-greater-than"></i>{' '}<Link smooth to='skills'>Skills</Link></li>
+                <li><i class="fa-solid fa-greater-than"></i>{' '}<Link smooth to='project'>Project</Link></li>
+                <li><i class="fa-solid fa-greater-than"></i>{' '}<Link smooth to='contact'>Contact</Link></li>
               </ul>
             </div>
             <div className="third-sec">

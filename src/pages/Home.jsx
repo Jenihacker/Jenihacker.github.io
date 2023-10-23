@@ -1,13 +1,14 @@
 import React from 'react'
 import Typed from 'react-typed'
 import image from '/assets/My project1.webp'
-import { HashLink as Link } from "react-router-hash-link";
+// import { HashLink as Link } from "react-router-hash-link";
+import { Element } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 
 function Home() {
 
   return (
-    <div className='home' id='home'>
+    <Element className='home' id='home'>
       <div className="hero">
       <Fade top>
         <div className="details">
@@ -29,7 +30,7 @@ function Home() {
               />
             </span></h2>
             <div className="abtbtn">
-              <Link smooth style={{textDecoration:"none",color: "#fff"}} to="#about"><button>About Me</button></Link>
+              
             </div>
             <div className="icons">
               <a href='https://github.com/Jenihacker/' target='__blank'><i class="fa-brands fa-github"></i></a>
@@ -47,7 +48,7 @@ function Home() {
         </div>
         </Fade>
       </div>
-    </div>
+    </Element>
     
   )
 }

@@ -3,6 +3,7 @@ import Pcards from '/src/components/Pcards'
 import Carousel from 'react-elastic-carousel'
 import { projects } from '/src/data/projects'
 import Zoom from 'react-reveal/Zoom';
+import { Element } from 'react-scroll';
 
 function Project() {
   const breakPoints = [
@@ -13,16 +14,16 @@ function Project() {
   ];
   
   return (
-    <div className='project' id='project' style={{ backgroundColor: "rgba(0,0,0,0.3)" }}>
+    <Element className='project' id='project' style={{ backgroundColor: "rgba(0,0,0,0.3)" }}>
         <Zoom>
         <h1>Projects</h1>
         <Carousel breakPoints={breakPoints} >
         { projects.map((elem) => (
-            <Pcards key={elem.id} image = {elem.image} title = {elem.title} details={elem.details} />
+            <Pcards key={elem.id} image = {elem.image} title = {elem.title} details={elem.details} url={elem.url}/>
             ))}
         </Carousel>
         </Zoom>
-    </div>
+    </Element>
   )
 }
 

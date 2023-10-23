@@ -1,10 +1,11 @@
 import React from 'react'
 import image from '/assets/Jenison.webp'
 import Fade from 'react-reveal/Fade';
+import { Element } from 'react-scroll';
 
 function About() {
   return (
-    <div className='about' id='about' >
+    <Element className='about' id='about' >
       <Fade left>
       <h1>About Me</h1>
       </Fade>
@@ -22,7 +23,7 @@ function About() {
         </div>
         </Fade>
       </div>
-    </div>
+    </Element>
   )
 }
 

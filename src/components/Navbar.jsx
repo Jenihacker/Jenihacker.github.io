@@ -1,5 +1,6 @@
-import { HashLink as Link } from "react-router-hash-link";
-import logo from '/assets/logo.webp'
+//import { HashLink as Link } from "react-router-hash-link";
+import logo from '/assets/67710789679.png'
+import { Link } from 'react-scroll'
 
 function Navbar() {
 
@@ -42,40 +43,91 @@ function Navbar() {
     <div className="navbar">
       <nav>
         <div className="logo">
-        <Link smooth to='#home'> <img src={ logo } alt="logo" /> </Link>
-          <button style={{height:"2.5rem",width:"2.2rem"}} id="menu" onClick={() => hide_menu()}>
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            {" "}
+            <img
+              src={logo}
+              alt="logo"
+            />{" "}
+          </Link>
+          <button
+          type='button'
+            style={{ height: "2.5rem", width: "2.2rem" }}
+            id="menu"
+            onClick={() => hide_menu()}
+          >
             <i class="fa-solid fa-bars"></i>
           </button>
         </div>
         <ul id="list">
           <li>
-            <Link smooth to="#home" onClick={() => hide_menu()} >
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => hide_menu()}
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link smooth to="#about" onClick={() => hide_menu()}>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => hide_menu()}
+            >
               About
             </Link>
           </li>
           <li>
-            <Link smooth to="#skills" onClick={() => hide_menu()}>
+            <Link
+              activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => hide_menu()}
+            >
               Skills
             </Link>
           </li>
           <li>
-            <Link smooth to="#project" onClick={() => hide_menu()}>
+            <Link
+              activeClass="active"
+              to="project"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => hide_menu()}
+            >
               Project
             </Link>
           </li>
           <li>
-            <Link smooth to="#contact" onClick={() => hide_menu()}>
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => hide_menu()}
+            >
               Contact
             </Link>
           </li>
         </ul>
       </nav>
-
     </div>
   );
 }
