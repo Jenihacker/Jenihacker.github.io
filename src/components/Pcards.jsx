@@ -26,7 +26,7 @@ function Pcards({ image, title, details, url }) {
         <p>{details}</p>
       </div>
       <div className="url">
-        <a href={url}>{url}</a>
+        <a href={url}>See Project</a>
       </div>
       <div
         className="cover"
