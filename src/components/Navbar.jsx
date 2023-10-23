@@ -1,5 +1,5 @@
 //import { HashLink as Link } from "react-router-hash-link";
-import logo from '/assets/67710789679.png'
+import logo from '/assets/67710789679.webp'
 import { Link } from 'react-scroll'
 
 function Navbar() {
